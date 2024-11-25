@@ -64,7 +64,7 @@ const faqData = [
 const Product = () => {
   const [activeCard, setActiveCard] = useState(null);
   const [activeIndex, setActiveIndex] = useState(null);
-  const [selectedImage, setSelectedImage] = useState(productImages[0].src);
+  const [selectedImage, setSelectedImage] = useState(productImages[0]);
 
   const handleImageClick = (imageSrc) => {
     setSelectedImage(imageSrc);
