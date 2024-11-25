@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import Logo from "./../assets/logo.avif";
 import { BsPerson } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";
+import { TbTruckDelivery } from "react-icons/tb";
+import { CiHeart } from "react-icons/ci";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +14,7 @@ function Navbar() {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        `uppercase py-[8px] px-5 text-sm rounded-[4px]  font-semibold ${
+        `uppercase py-[10px] px-5 text-sm rounded-[4px]  font-bold ${
           isActive ? "bg-primary text-white" : "text-black hover:bg-gray-100"
         }`
       }
@@ -22,6 +24,7 @@ function Navbar() {
   );
 
   return (
+    <>
     <div className="container mx-auto px-4">
       <nav className="grid grid-cols-3 items-center py-5">
         {/* Left: NavLinks */}
@@ -59,6 +62,11 @@ function Navbar() {
         </button>
       </nav>
     </div>
+     <div className="bg-primary py-2 text-white font-bold flex items-center justify-center gap-3">
+     <p className="flex gap-1 items-center"><TbTruckDelivery className="text-xl"/> Free Shipping Today</p>
+     <p className="flex gap-1 items-center"><CiHeart className="text-2xl"/> 72,500+ Happy Babes</p>
+   </div>
+   </>
   );
 }
 
