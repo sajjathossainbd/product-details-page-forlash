@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Product from "../components/Product";
 import CompanyBrand from "../components/CompanyBrand";
 import ProductBenefits from "../components/ProductBenefits";
+import Testimonial from "../components/Testimonial";
 
 function ProductDetails() {
   return (
@@ -13,6 +14,7 @@ function ProductDetails() {
       <Product />
       <CompanyBrand />
       <ProductBenefits />
+      <Testimonial />
     </div>
   );
 }
