@@ -46,7 +46,7 @@ function SubNavbar() {
   //   Coundown Component
   const Countdown = ({ timeLeft, title }) => {
     return (
-      <div className="m-0 p-0 py-1 px-3 bg-white rounded-sm text-center flex flex-col">
+      <div className="py-1 px-2 md:py-1 md:px-3 lg:py-1 lg:px-3 bg-white rounded-sm text-center flex flex-col">
         <span className="m-0 p-0 text-sm font-extrabold">{timeLeft}</span>
         <span className="m-0 p-0 text-[8px] font-bold">{title}</span>
       </div>
