@@ -5,6 +5,7 @@ import Product from "../components/Product";
 import CompanyBrand from "../components/CompanyBrand";
 import ProductBenefits from "../components/ProductBenefits";
 import Testimonial from "../components/Testimonial";
+import Footer from "../components/Footer";
 
 function ProductDetails() {
   return (
@@ -15,6 +16,7 @@ function ProductDetails() {
       <CompanyBrand />
       <ProductBenefits />
       <Testimonial />
+      <Footer />
     </div>
   );
 }
