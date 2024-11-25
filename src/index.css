@@ -1,0 +1,59 @@
+/* Import Google Font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Essential components from the Tailwind CSS  */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+@layer base {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply font-bold;
+    }
+  
+    h1 {
+      @apply text-5xl;
+    }
+  
+    h2 {
+      @apply text-4xl;
+    }
+  
+    h3 {
+      @apply text-[22px];
+    }
+  
+    h4 {
+      @apply text-xl;
+    }
+  
+    h5 {
+      @apply text-[18px];
+    }
+  
+    h6 {
+      @apply text-sm;
+    }
+  
+    strong {
+      @apply font-bold text-xs;
+    }
+  
+   
+  }
